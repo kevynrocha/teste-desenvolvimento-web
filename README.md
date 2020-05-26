@@ -1,58 +1,49 @@
 # Teste de Desenvolvimento Web
 
-Olá Dev! Tudo bem?
+Teste para a vaga de desenvolvedor Web na RedFox Tech!
 
-A RedFox está sempre em busca de profissionais interessantes e interessados, com boa capacidade de aprendizado, adaptação e principalmente motivação!
-
-Este teste tem como objetivo avaliar e desafiar você. Não é obrigatório realizá-lo completamente, queremos apenas conhecer você, seu esforço e potencial para aprender, se adaptar e tomar decisões.
-
-Agora vamos ao teste!
+## Inicializando o projeto
+Para iniciar a aplicação usar o comando:
+#### `git clone -b Kevyn-Oliveira https://github.com/rareirin/teste-desenvolvimento-web.git`
 
 
-## Desafio Pokémon
-
-Nós temos um problema, atualmente nosso sistema é só um excel, cheio de informações sobre Pokémon. Nós usamos ele como banco de dados e ao mesmo tempo interface de gerenciamento, inserindo, editando, deletando e filtrando os dados.
-
-A missão é criar um sistema para substituir este excel, pois queremos expandir e acrescentar funcionalidades. Queremos manter o básico, mas principalmente queremos uma forma prática e agradável de buscar os dados, com listagem, filtros, paginação e detalhes sobre cada Pokémon.
-
-Fique à vontade com o layout, precisamos de uma interface que consiga entregar as funcionalidades principais e substituir o excel, só isso.
+Iniciar o backend, entre na pasta teste-desenvolvimento-web e use o comando:
+#### `npm install && npm start`
 
 
-## Consigo fazer tudo isso?
-
-Consegue sim!
-
-O teste é flexível, você pode escolher alguma parte específica dele para fazer, em que se sinta mais confortável e confiante, por exemplo: a interface, as funcionalidades, o banco de dados, etc...O importante é tentar atingir o objetivo de alguma forma.
-
-Aqui na RedFox queremos aproveitar ao máximo suas habilidades e aptidões, mas também desafiar você a adquirir novas, então nossa equipe tem a liberdade de trasitar entre frontend, backend, infraestrutura, etc...Sem se restringir, tudo depende do esforço e vontade de cada um.
+Iniciar o frontend, entre na pasta teste-desenvolvimento-web/web e use o comando:
+#### `npm install && npm start` 
 
 
-## Por onde começo?
+Uma nova aba será aberta em seu navegador com a aplicação em funcionamento. :)
 
-Primeiramente, você pode fazer um fork desse repositório aqui, para sua conta do Github, depois disso crie uma branch nova com o seu nome, para podermos indentificá-lo.
+## Banco de dados
+O banco de dados (.xlsx) foi convertido em Json no site https://www.aconvert.com/document/xlsx-to-json/.
 
-Após terminar o desafio, você pode solicitar um pull request para a branch master do nosso repositório. Vamos receber e fazer a avaliação de todos.
+Após a conversão, todos os dados foram inseridos em um Cluster da https://cloud.mongodb.com/.
 
+Alguns documentos tiveram os nomes alterados para maior facilidade. 
 
-## E o Layout??
+## Backend
+O Backend da aplicação foi desenvolvido em Node.Js conforme solicitado.
 
-Fique a vontade quanto a isso, não vamos avaliar o design da sua interface. Se quiser desenhar algo bacana, diferente, pensar até em UI/UX, etc...é claro que vamos valorizar o seu esforço e considerar como um diferencial, mas não se preocupe. 
+### Rotas
+As rotas foram criadas utilizando o Express: https://expressjs.com/pt-br/.
 
+### Conexão e Models
+A model e a conexão com o banco de dados foram criadas com ajuda do Mongoose: https://mongoosejs.com/.
 
-## Regras
+## Frontend
+O Frontend da aplicação foi desenvolvido em React e Bootstrap.
 
-Para o desafio ficar mais interessante, decidimos criar algumas regras:
-- No layout, deve utilizar algum framework CSS (ex: Bootstrap, MaterializeCSS, Bulma...)
-- No frontend, deve utilizar algum framework JS (ex: VueJS, ReactJS, Angular...tente não usar jQuery)
-- No backend, deve utilizar NodeJS
-- Documentar um pouco o projeto, o que você fez e de que forma devemos executar-lo
+### Api
+A Api está sendo consumida com ajuda do Axios: https://github.com/axios/axios.
 
+### Rotas
+As rotas estão sendo feitas através do React Router: https://reacttraining.com/react-router/.
 
-## Só isso?
+## Funcionalidades
+A aplicação está listando todos os pokemons do banco de dados na página inicial. Também é possível adicionar novos pokemons na página 'adicionar'.
 
-Só!...mas se quiser ir além, tente preparar o projeto para ser executado de maneira simples e prática, se coloque no lugar de alguém com menos conhecimentos, que precisa ver o que você desenvolveu. 
-
-ps: Se fizer deploy em algum servidor ou utilizar alguma ferramenta que facilite a execução (ex: docker), será um diferencial.
-
-
-Boa sorte! (^_^)
+## Obervações
+Este foi realmente um desafio para mim, infelizmente não consegui cumprir todos os requisitos exigidos, mas sei que me esforcei o máximo nesses 5 dias para aprender e entregar o melhor resultado possível. Independente da decisão, esse será um projeto que quero melhorar e adicionar muitas coisas que não tive tempo para fazer.
